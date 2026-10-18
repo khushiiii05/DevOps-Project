@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Fundamentals Mini Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 15px;
+            color: white;
+
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #123c69,
+                #6d28d9,
+                #0891b2
+            );
+            background-size: 300% 300%;
+            animation: gradientMove 10s ease infinite;
+        }
+
+        @keyframes gradientMove {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            padding: 45px 30px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.10);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(15px);
+
+            transition: transform 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+        }
+
+        .icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(27px, 5vw, 38px);
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            color: #c7e8ff;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .details {
+            background: rgba(15, 23, 42, 0.35);
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+        }
+
+        .details p {
+            font-size: 17px;
+            margin: 15px 0;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        .details strong {
+            color: #67e8f9;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 25px 0;
+        }
+
+        .tech {
+            padding: 10px 18px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.13);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: white;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .tech:hover {
+            background: #67e8f9;
+            color: #0f172a;
+            transform: scale(1.08);
+        }
+
+        .status {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            border-radius: 25px;
+            background: rgba(34, 197, 94, 0.18);
+            border: 1px solid #4ade80;
+            color: #bbf7d0;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 28px;
+            color: #cbd5e1;
+            font-size: 13px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 35px 20px;
+            }
+
+            .details p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="icon">☁️</div>
+
+        <h1>DevOps Fundamentals</h1>
+
+        <p class="subtitle">
+            Mini Project | Cloud Computing & Linux
+        </p>
+
+        <div class="details">
+            <p><strong>Student Name:</strong> Khushi Mishra</p>
+            <p><strong>Batch Code:</strong> 530</p>
+            <p><strong>Project Date:</strong> 18 October 2026</p>
+            <p><strong>Hosting Platform:</strong> AWS Ubuntu Server</p>
+        </div>
+
+        <h3>Technologies Used</h3>
+
+        <div class="tech-stack">
+            <span class="tech">🐧 Linux</span>
+            <span class="tech">☁️ AWS</span>
+            <span class="tech">🔧 Git</span>
+            <span class="tech">💻 HTML & CSS</span>
+        </div>
+
+        <div class="status">
+            ● Cloud Project Showcase
+        </div>
+
+        <footer>
+            Built with HTML & CSS | Deployed on AWS
+        </footer>
+
+    </div>
+
+</body>
+</html>
