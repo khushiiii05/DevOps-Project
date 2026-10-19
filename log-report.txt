@@ -1,0 +1,54 @@
+========================================
+      LINUX LOG MONITORING REPORT
+Generated: Mon Oct 19 10:31:10 UTC 2026
+Hostname: ip-10-0-1-48
+========================================
+
+1. FAILED LOGIN ATTEMPTS
+----------------------------------------
+
+2. SSH LOGIN ACTIVITY
+----------------------------------------
+2026-10-18T08:30:09.157145+00:00 ip-10-0-1-48 sshd-session[1149]: Accepted publickey for ubuntu from 13.233.177.5 port 10482 ssh2: ED25519 SHA256:uz4h/SlI25uR99PORyFnax1ziietwtOeGk9zvKPh3Co
+2026-10-18T08:30:09.159613+00:00 ip-10-0-1-48 sshd-session[1149]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-10-18T09:06:54.943844+00:00 ip-10-0-1-48 sshd-session[1149]: pam_unix(sshd:session): session closed for user ubuntu
+2026-10-18T09:07:49.616619+00:00 ip-10-0-1-48 sshd-session[29785]: Accepted publickey for ubuntu from 13.233.177.5 port 12710 ssh2: ED25519 SHA256:SXatGvYEeC9ikKu3Eu4RtuVviGPRrqbTYEs/dm3lrks
+2026-10-18T09:07:49.618304+00:00 ip-10-0-1-48 sshd-session[29785]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-10-18T09:58:58.725620+00:00 ip-10-0-1-48 sshd-session[29785]: pam_unix(sshd:session): session closed for user ubuntu
+2026-10-19T09:55:35.943901+00:00 ip-10-0-1-48 sshd-session[1107]: Accepted publickey for ubuntu from 13.233.177.3 port 9403 ssh2: ED25519 SHA256:9V12npVw9VMaXlOhcxd+ben2bbWbekJGCoUILDJKDRM
+2026-10-19T09:55:35.947573+00:00 ip-10-0-1-48 sshd-session[1107]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-10-19T10:31:10.941775+00:00 ip-10-0-1-48 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Project ; USER=root ; COMMAND=/usr/bin/grep -Ei sshd.*(accepted|session opened|session closed) /var/log/auth.log
+
+3. SYSTEM ERRORS
+----------------------------------------
+Oct 18 08:28:52 ubuntu kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+-- Boot 5f926a8664e141a1aa1afeb0097e0acf --
+Oct 19 09:55:21 ip-10-0-1-48 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+
+4. WARNING MESSAGES
+----------------------------------------
+Oct 18 12:33:34 ip-10-0-1-48 systemd-udevd[13908]: Failed to remove file descriptor "config-serialization" from the store, ignoring: Connection refused
+-- Boot 5f926a8664e141a1aa1afeb0097e0acf --
+Oct 19 09:55:20 ip-10-0-1-48 kernel: MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+Oct 19 09:55:20 ip-10-0-1-48 kernel: MMIO Stale Data CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/processor_mmio_stale_data.html for more details.
+Oct 19 09:55:20 ip-10-0-1-48 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Oct 19 09:55:20 ip-10-0-1-48 kernel: i8042: Warning: Keylock active
+Oct 19 09:55:21 ip-10-0-1-48 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Oct 19 09:55:21 ip-10-0-1-48 kernel: ena 0000:00:05.0: LLQ is not supported Fallback to host mode policy.
+Oct 19 09:55:22 ip-10-0-1-48 (udev-worker)[375]: ens5: Could not set WakeOnLan to off, ignoring: Operation not supported
+Oct 19 09:55:22 ip-10-0-1-48 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Oct 19 09:55:26 ip-10-0-1-48 (acpid)[617]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Oct 19 09:55:26 ip-10-0-1-48 (cron)[622]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Oct 19 09:55:27 ip-10-0-1-48 (irqbalance)[633]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Oct 19 09:55:27 ip-10-0-1-48 kernel: nvme nvme0: using unchecked data buffer
+Oct 19 09:55:27 ip-10-0-1-48 kernel: kauditd_printk_skb: 169 callbacks suppressed
+Oct 19 09:55:32 ip-10-0-1-48 chronyd[761]: System clock wrong by 1.465236 seconds
+Oct 19 09:55:34 ip-10-0-1-48 chronyd[761]: System clock was stepped by 1.465236 seconds
+Oct 19 10:00:38 ip-10-0-1-48 irqbalance[633]: Cannot change IRQ 26 affinity: Permission denied
+Oct 19 10:00:38 ip-10-0-1-48 irqbalance[633]: IRQ 26 affinity is now unmanaged
+Oct 19 10:07:28 ip-10-0-1-48 irqbalance[633]: Cannot change IRQ 25 affinity: Permission denied
+Oct 19 10:07:28 ip-10-0-1-48 irqbalance[633]: IRQ 25 affinity is now unmanaged
+
+========================================
+           END OF REPORT
+========================================
