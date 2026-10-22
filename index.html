@@ -1,10 +1,10 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>DevOps Fundamentals Mini Project</title>
 
     <style>
@@ -30,6 +30,7 @@
                 #6d28d9,
                 #0891b2
             );
+
             background-size: 300% 300%;
             animation: gradientMove 10s ease infinite;
         }
@@ -42,13 +43,14 @@
 
         .container {
             width: 100%;
-            max-width: 700px;
+            max-width: 900px;
             padding: 45px 30px;
             text-align: center;
 
             background: rgba(255, 255, 255, 0.10);
             border: 1px solid rgba(255, 255, 255, 0.25);
-            border-radius: 24px;
+            border-radius: 28px;
+
             box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(15px);
 
@@ -57,93 +59,169 @@
         }
 
         .container:hover {
-            transform: translateY(-6px);
+            transform: translateY(-4px);
             box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
         }
 
         .icon {
-            font-size: 55px;
-            margin-bottom: 15px;
+            font-size: 65px;
+            margin-bottom: 18px;
         }
 
         h1 {
-            font-size: clamp(27px, 5vw, 38px);
+            font-size: clamp(28px, 5vw, 46px);
             margin-bottom: 12px;
             color: #ffffff;
         }
 
         .subtitle {
             color: #c7e8ff;
-            font-size: 16px;
-            margin-bottom: 30px;
+            font-size: clamp(15px, 2.5vw, 20px);
+            margin-bottom: 35px;
         }
 
         .details {
-            background: rgba(15, 23, 42, 0.35);
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 25px;
+            background: rgba(15, 23, 42, 0.40);
+            border-radius: 20px;
+            padding: 25px 15px;
+            margin-bottom: 35px;
         }
 
         .details p {
-            font-size: 17px;
+            font-size: clamp(15px, 2.5vw, 20px);
             margin: 15px 0;
-            color: #f1f5f9;
             line-height: 1.6;
+            overflow-wrap: anywhere;
         }
 
         .details strong {
             color: #67e8f9;
         }
 
+        h3 {
+            font-size: 23px;
+            margin-bottom: 22px;
+            color: white;
+        }
+
         .tech-stack {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
             gap: 12px;
-            margin: 25px 0;
+            margin-bottom: 30px;
         }
 
         .tech {
-            padding: 10px 18px;
+            display: inline-block;
+            padding: 12px 20px;
             border-radius: 30px;
-            background: rgba(255, 255, 255, 0.13);
+
+            background: rgba(255, 255, 255, 0.14);
             border: 1px solid rgba(255, 255, 255, 0.25);
+
             color: white;
-            font-size: 14px;
-            transition: 0.3s;
+            font-size: 16px;
+
+            transition: background 0.3s ease,
+                        color 0.3s ease,
+                        transform 0.3s ease;
         }
 
         .tech:hover {
             background: #67e8f9;
             color: #0f172a;
-            transform: scale(1.08);
+            transform: translateY(-4px);
         }
 
         .status {
             display: inline-block;
-            margin-top: 10px;
-            padding: 10px 18px;
-            border-radius: 25px;
+            margin-top: 5px;
+            padding: 12px 22px;
+            border-radius: 30px;
+
             background: rgba(34, 197, 94, 0.18);
             border: 1px solid #4ade80;
             color: #bbf7d0;
-            font-size: 14px;
+            font-size: 16px;
+        }
+
+        .github-section {
+            margin-top: 30px;
+        }
+
+        .github-button {
+            display: inline-block;
+            padding: 15px 28px;
+            border-radius: 30px;
+
+            background: #ffffff;
+            color: #5b21b6;
+
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+
+            transition: transform 0.3s ease,
+                        background 0.3s ease,
+                        box-shadow 0.3s ease;
+        }
+
+        .github-button:hover {
+            background: #67e8f9;
+            color: #0f172a;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
         }
 
         footer {
-            margin-top: 28px;
-            color: #cbd5e1;
-            font-size: 13px;
+            margin-top: 30px;
+            color: #dbeafe;
+            font-size: 14px;
+            line-height: 1.7;
         }
 
         @media (max-width: 480px) {
-            .container {
-                padding: 35px 20px;
+            body {
+                padding: 15px 10px;
             }
 
-            .details p {
+            .container {
+                padding: 32px 18px;
+                border-radius: 20px;
+            }
+
+            .icon {
+                font-size: 52px;
+            }
+
+            .details {
+                padding: 18px 12px;
+            }
+
+            .tech {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+
+            .github-button {
+                padding: 13px 20px;
                 font-size: 15px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            body {
+                animation: none;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
             }
         }
     </style>
@@ -151,41 +229,55 @@
 
 <body>
 
-    <div class="container">
+    <main class="container">
 
-        <div class="icon">☁️</div>
+        <div class="icon" aria-hidden="true">☁️</div>
 
         <h1>DevOps Fundamentals</h1>
 
         <p class="subtitle">
-            Mini Project | Cloud Computing & Linux
+            Mini Project | Cloud Computing &amp; Linux
         </p>
 
-        <div class="details">
+        <section class="details" aria-label="Project details">
             <p><strong>Student Name:</strong> Khushi Mishra</p>
             <p><strong>Batch Code:</strong> 530</p>
             <p><strong>Project Date:</strong> 18 October 2026</p>
             <p><strong>Hosting Platform:</strong> AWS Ubuntu Server</p>
-        </div>
+        </section>
 
-        <h3>Technologies Used</h3>
+        <section aria-labelledby="technologies-heading">
+            <h3 id="technologies-heading">Technologies Used</h3>
 
-        <div class="tech-stack">
-            <span class="tech">🐧 Linux</span>
-            <span class="tech">☁️ AWS</span>
-            <span class="tech">🔧 Git</span>
-            <span class="tech">💻 HTML & CSS</span>
-        </div>
+            <div class="tech-stack">
+                <span class="tech">🐧 Linux</span>
+                <span class="tech">☁️ AWS</span>
+                <span class="tech">🔧 Git</span>
+                <span class="tech">💻 HTML &amp; CSS</span>
+            </div>
+        </section>
 
         <div class="status">
-            ● Cloud Project Showcase
+            <span aria-hidden="true">●</span>
+            Cloud Project Showcase
         </div>
 
+        <section class="github-section" aria-label="GitHub project">
+            <a
+                class="github-button"
+                href="https://github.com/khushiiii05/DevOps-Project"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                View My Project on GitHub ↗
+            </a>
+        </section>
+
         <footer>
-            Built with HTML & CSS | Deployed on AWS
+            Built with HTML &amp; CSS | Deployed on AWS
         </footer>
 
-    </div>
+    </main>
 
 </body>
 </html>
