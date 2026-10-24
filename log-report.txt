@@ -1,45 +1,34 @@
 ========================================
       LINUX LOG MONITORING REPORT
-Generated: Thu Oct 22 10:58:06 UTC 2026
+Generated: Sat Oct 24 09:24:55 UTC 2026
 Hostname: ip-10-0-1-48
 ========================================
 
 1. FAILED LOGIN ATTEMPTS
 ----------------------------------------
-2026-10-19T11:03:13.783901+00:00 ip-10-0-1-48 sshd-session[2865]: Connection closed by invalid user user 106.104.115.199 port 34364 [preauth]
-2026-10-19T11:03:14.638297+00:00 ip-10-0-1-48 sshd-session[2867]: Invalid user admin from 106.104.115.199 port 34384
-2026-10-19T11:03:14.904868+00:00 ip-10-0-1-48 sshd-session[2867]: Connection closed by invalid user admin 106.104.115.199 port 34384 [preauth]
-2026-10-19T11:03:16.772690+00:00 ip-10-0-1-48 sshd-session[2871]: Invalid user admin from 106.104.115.199 port 34420
-2026-10-19T11:03:17.030446+00:00 ip-10-0-1-48 sshd-session[2871]: Connection closed by invalid user admin 106.104.115.199 port 34420 [preauth]
-2026-10-19T11:03:18.910525+00:00 ip-10-0-1-48 sshd-session[2875]: Invalid user admin from 106.104.115.199 port 34460
-2026-10-19T11:03:19.166475+00:00 ip-10-0-1-48 sshd-session[2875]: Connection closed by invalid user admin 106.104.115.199 port 34460 [preauth]
-2026-10-19T11:03:29.261873+00:00 ip-10-0-1-48 sshd-session[2895]: Invalid user admin from 106.104.115.199 port 34782
-2026-10-19T11:03:29.503673+00:00 ip-10-0-1-48 sshd-session[2895]: Connection closed by invalid user admin 106.104.115.199 port 34782 [preauth]
-2026-10-19T11:03:30.299605+00:00 ip-10-0-1-48 sshd-session[2897]: Invalid user admin from 106.104.115.199 port 34808
-2026-10-19T11:03:30.547518+00:00 ip-10-0-1-48 sshd-session[2897]: Connection closed by invalid user admin 106.104.115.199 port 34808 [preauth]
-2026-10-19T11:03:31.345902+00:00 ip-10-0-1-48 sshd-session[2899]: Invalid user guest from 106.104.115.199 port 34826
-2026-10-19T11:03:31.593412+00:00 ip-10-0-1-48 sshd-session[2899]: Connection closed by invalid user guest 106.104.115.199 port 34826 [preauth]
-2026-10-19T11:03:32.368375+00:00 ip-10-0-1-48 sshd-session[2901]: Invalid user ubnt from 106.104.115.199 port 34972
-2026-10-19T11:03:32.610082+00:00 ip-10-0-1-48 sshd-session[2901]: Connection closed by invalid user ubnt 106.104.115.199 port 34972 [preauth]
-2026-10-19T11:03:36.597866+00:00 ip-10-0-1-48 sshd-session[2909]: Invalid user admin from 106.104.115.199 port 35184
-2026-10-19T11:03:36.832940+00:00 ip-10-0-1-48 sshd-session[2909]: Connection closed by invalid user admin 106.104.115.199 port 35184 [preauth]
-2026-10-22T09:19:26.722434+00:00 ip-10-0-1-48 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Project ; USER=root ; COMMAND=/usr/bin/grep -Ei failed password|authentication failure|invalid user /var/log/auth.log
-2026-10-22T10:57:14.453015+00:00 ip-10-0-1-48 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Project ; USER=root ; COMMAND=/usr/bin/grep -iE failed password|authentication failure|invalid user /var/log/auth.log
-2026-10-22T10:58:06.672765+00:00 ip-10-0-1-48 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Project ; USER=root ; COMMAND=/usr/bin/grep -Ei failed password|authentication failure|invalid user /var/log/auth.log
+2026-10-22T12:40:35.185295+00:00 ip-10-0-1-48 sshd-session[11872]: Connection closed by invalid user admin 117.50.195.206 port 44246 [preauth]
+2026-10-22T12:40:36.033020+00:00 ip-10-0-1-48 sshd-session[11874]: Invalid user admin from 117.50.195.206 port 44248
+2026-10-22T12:40:36.239707+00:00 ip-10-0-1-48 sshd-session[11874]: Connection closed by invalid user admin 117.50.195.206 port 44248 [preauth]
+2026-10-22T12:40:37.577579+00:00 ip-10-0-1-48 sshd-session[11876]: Invalid user admin from 117.50.195.206 port 44256
+2026-10-22T12:40:37.838123+00:00 ip-10-0-1-48 sshd-session[11876]: Connection closed by invalid user admin 117.50.195.206 port 44256 [preauth]
+2026-10-22T12:40:38.647819+00:00 ip-10-0-1-48 sshd-session[11878]: Invalid user admin from 117.50.195.206 port 44264
+2026-10-22T12:40:38.858857+00:00 ip-10-0-1-48 sshd-session[11878]: Connection closed by invalid user admin 117.50.195.206 port 44264 [preauth]
+2026-10-22T12:40:39.729598+00:00 ip-10-0-1-48 sshd-session[11880]: Invalid user admin from 117.50.195.206 port 34360
+2026-10-22T12:40:39.951704+00:00 ip-10-0-1-48 sshd-session[11880]: Connection closed by invalid user admin 117.50.195.206 port 34360 [preauth]
+2026-10-22T12:40:41.033695+00:00 ip-10-0-1-48 sshd-session[11882]: Invalid user admin from 117.50.195.206 port 34376
+2026-10-22T12:40:41.291689+00:00 ip-10-0-1-48 sshd-session[11882]: Connection closed by invalid user admin 117.50.195.206 port 34376 [preauth]
+2026-10-22T12:40:42.071350+00:00 ip-10-0-1-48 sshd-session[11884]: Invalid user admin from 117.50.195.206 port 34380
+2026-10-22T12:40:42.273936+00:00 ip-10-0-1-48 sshd-session[11884]: Connection closed by invalid user admin 117.50.195.206 port 34380 [preauth]
+2026-10-22T12:40:43.075232+00:00 ip-10-0-1-48 sshd-session[11886]: Invalid user admin from 117.50.195.206 port 34382
+2026-10-22T12:40:43.272418+00:00 ip-10-0-1-48 sshd-session[11886]: Connection closed by invalid user admin 117.50.195.206 port 34382 [preauth]
+2026-10-22T12:40:44.159454+00:00 ip-10-0-1-48 sshd-session[11888]: Invalid user pi from 117.50.195.206 port 34396
+2026-10-22T12:40:44.374184+00:00 ip-10-0-1-48 sshd-session[11888]: Connection closed by invalid user pi 117.50.195.206 port 34396 [preauth]
+2026-10-22T12:40:45.182533+00:00 ip-10-0-1-48 sshd-session[11890]: Invalid user ftp from 117.50.195.206 port 34412
+2026-10-22T12:40:45.382898+00:00 ip-10-0-1-48 sshd-session[11890]: Connection closed by invalid user ftp 117.50.195.206 port 34412 [preauth]
+2026-10-24T09:24:55.871645+00:00 ip-10-0-1-48 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Project ; USER=root ; COMMAND=/usr/bin/grep -Ei failed password|authentication failure|invalid user /var/log/auth.log
 
 2. SSH LOGIN ACTIVITY
 ----------------------------------------
-2026-10-21T10:52:28.740902+00:00 ip-10-0-1-48 sshd-session[3080]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
-2026-10-21T12:08:54.357272+00:00 ip-10-0-1-48 sshd-session[3080]: pam_unix(sshd:session): session closed for user ubuntu
-2026-10-21T13:06:58.571232+00:00 ip-10-0-1-48 sshd-session[3692]: Accepted publickey for ubuntu from 13.233.177.4 port 17631 ssh2: ED25519 SHA256:4fc9AZOjveFhPsyefCRAktbSrtCtlugQTOHOYFCIkhs
-2026-10-21T13:06:58.572457+00:00 ip-10-0-1-48 sshd-session[3692]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
-2026-10-21T13:19:49.903482+00:00 ip-10-0-1-48 sshd-session[3692]: pam_unix(sshd:session): session closed for user ubuntu
-2026-10-22T09:00:29.312319+00:00 ip-10-0-1-48 sshd-session[1089]: Accepted publickey for ubuntu from 13.233.177.3 port 20969 ssh2: ED25519 SHA256:lMq/jRNmNB0VrexCayRAzr7ZEHyztxLgmLmR+W4skFg
-2026-10-22T09:00:29.315414+00:00 ip-10-0-1-48 sshd-session[1089]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
-2026-10-22T09:19:26.731097+00:00 ip-10-0-1-48 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Project ; USER=root ; COMMAND=/usr/bin/grep -Ei sshd.*(accepted|session opened|session closed) /var/log/auth.log
-2026-10-22T09:28:10.057155+00:00 ip-10-0-1-48 sshd-session[1089]: pam_unix(sshd:session): session closed for user ubuntu
-2026-10-22T09:28:32.472656+00:00 ip-10-0-1-48 sshd-session[8421]: Accepted publickey for ubuntu from 13.233.177.5 port 63947 ssh2: ED25519 SHA256:z73//oylg7/fa3rZTSPazdWdSO81vdYLW2KmgSD01tc
-2026-10-22T09:28:32.473817+00:00 ip-10-0-1-48 sshd-session[8421]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
 2026-10-22T09:29:43.675592+00:00 ip-10-0-1-48 sshd-session[8421]: pam_unix(sshd:session): session closed for user ubuntu
 2026-10-22T09:29:55.350656+00:00 ip-10-0-1-48 sshd-session[8838]: Accepted publickey for ubuntu from 13.233.177.4 port 56138 ssh2: ED25519 SHA256:7Ocyx51Wrr1B4odOTn2ivjDIQPTwfgPMtzD8tRFIIWM
 2026-10-22T09:29:55.352356+00:00 ip-10-0-1-48 sshd-session[8838]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
@@ -49,6 +38,17 @@ Hostname: ip-10-0-1-48
 2026-10-22T10:15:06.234300+00:00 ip-10-0-1-48 sshd-session[9617]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
 2026-10-22T10:15:06.908835+00:00 ip-10-0-1-48 sshd-session[9617]: pam_unix(sshd:session): session closed for user ubuntu
 2026-10-22T10:58:06.683630+00:00 ip-10-0-1-48 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Project ; USER=root ; COMMAND=/usr/bin/grep -Ei sshd.*(accepted|session opened|session closed) /var/log/auth.log
+2026-10-22T11:05:45.077702+00:00 ip-10-0-1-48 sshd-session[8838]: pam_unix(sshd:session): session closed for user ubuntu
+2026-10-22T12:27:47.404507+00:00 ip-10-0-1-48 sshd-session[10505]: Accepted publickey for ubuntu from 13.233.177.3 port 54314 ssh2: ED25519 SHA256:feWOH9VzDQKdcxH0esfYrDrEzdxTPwTOtl3s9x2d1yA
+2026-10-22T12:27:47.406330+00:00 ip-10-0-1-48 sshd-session[10505]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-10-22T12:28:19.183271+00:00 ip-10-0-1-48 sshd-session[9487]: pam_unix(sshd:session): session closed for user ubuntu
+2026-10-22T13:08:22.086861+00:00 ip-10-0-1-48 sshd-session[10505]: pam_unix(sshd:session): session closed for user ubuntu
+2026-10-24T08:20:21.269753+00:00 ip-10-0-1-48 sshd-session[1130]: Accepted publickey for ubuntu from 13.233.177.4 port 57815 ssh2: ED25519 SHA256:s6aRj74eMDjmR2HZlFr9SCPosvh1uZnBS9kdfXrNbxQ
+2026-10-24T08:20:21.273578+00:00 ip-10-0-1-48 sshd-session[1130]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-10-24T08:29:22.011809+00:00 ip-10-0-1-48 sshd-session[1130]: pam_unix(sshd:session): session closed for user ubuntu
+2026-10-24T08:56:34.068421+00:00 ip-10-0-1-48 sshd-session[2178]: Accepted publickey for ubuntu from 13.233.177.4 port 4588 ssh2: ED25519 SHA256:lOl+k3GT/YCpqnYSTrD9ex7RhIOwkMp7De5wGCVpINc
+2026-10-24T08:56:34.069684+00:00 ip-10-0-1-48 sshd-session[2178]: pam_unix(sshd:session): session opened for user ubuntu(uid=1000) by ubuntu(uid=0)
+2026-10-24T09:24:55.882536+00:00 ip-10-0-1-48 sudo: ubuntu : TTY=/dev/pts/0 ; PWD=/home/ubuntu/DevOps-Project ; USER=root ; COMMAND=/usr/bin/grep -Ei sshd.*(accepted|session opened|session closed) /var/log/auth.log
 
 3. SYSTEM ERRORS
 ----------------------------------------
@@ -65,29 +65,34 @@ Oct 21 13:14:34 ip-10-0-1-48 systemd[1]: Failed to start fwupd-refresh.service -
 -- Boot 637c5cbb41b54124b5f7e9446c26bbb8 --
 Oct 22 08:59:27 ip-10-0-1-48 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
 Oct 22 10:42:14 ip-10-0-1-48 sshd-session[9820]: error: kex_exchange_identification: read: Connection reset by peer
+Oct 22 12:44:40 ip-10-0-1-48 sshd-session[11929]: error: kex_exchange_identification: read: Connection reset by peer
+-- Boot ef67fc3ddc534c6185b8a537bec90ddd --
+Oct 24 08:20:08 ip-10-0-1-48 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Oct 24 08:27:31 ip-10-0-1-48 sshd-session[1672]: error: kex_exchange_identification: read: Connection reset by peer
 
 4. WARNING MESSAGES
 ----------------------------------------
-Oct 22 08:59:26 ip-10-0-1-48 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
-Oct 22 08:59:26 ip-10-0-1-48 kernel: i8042: Warning: Keylock active
-Oct 22 08:59:27 ip-10-0-1-48 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
-Oct 22 08:59:27 ip-10-0-1-48 kernel: ena 0000:00:05.0: LLQ is not supported Fallback to host mode policy.
-Oct 22 08:59:28 ip-10-0-1-48 (udev-worker)[431]: ens5: Could not set WakeOnLan to off, ignoring: Operation not supported
-Oct 22 08:59:28 ip-10-0-1-48 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
-Oct 22 08:59:30 ip-10-0-1-48 (acpid)[623]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
-Oct 22 08:59:30 ip-10-0-1-48 (cron)[628]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
-Oct 22 08:59:30 ip-10-0-1-48 (irqbalance)[640]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
-Oct 22 08:59:31 ip-10-0-1-48 kernel: nvme nvme0: using unchecked data buffer
-Oct 22 08:59:36 ip-10-0-1-48 chronyd[748]: System clock wrong by 1.164120 seconds
-Oct 22 08:59:37 ip-10-0-1-48 chronyd[748]: System clock was stepped by 1.164120 seconds
-Oct 22 09:00:30 ip-10-0-1-48 kernel: kauditd_printk_skb: 177 callbacks suppressed
-Oct 22 09:05:00 ip-10-0-1-48 kernel: kauditd_printk_skb: 6 callbacks suppressed
-Oct 22 09:36:52 ip-10-0-1-48 irqbalance[640]: Cannot change IRQ 26 affinity: Permission denied
-Oct 22 09:36:52 ip-10-0-1-48 irqbalance[640]: IRQ 26 affinity is now unmanaged
-Oct 22 10:01:12 ip-10-0-1-48 kernel: ena 0000:00:05.0: Type was not set for devlink port.
-Oct 22 10:42:14 ip-10-0-1-48 sshd-session[9820]: error: kex_exchange_identification: read: Connection reset by peer
-Oct 22 10:44:42 ip-10-0-1-48 irqbalance[640]: Cannot change IRQ 25 affinity: Permission denied
-Oct 22 10:44:42 ip-10-0-1-48 irqbalance[640]: IRQ 25 affinity is now unmanaged
+Oct 22 12:48:01 ip-10-0-1-48 kernel: workqueue: drm_fb_helper_damage_work hogged CPU for >10000us 11 times, consider switching to WQ_UNBOUND
+-- Boot ef67fc3ddc534c6185b8a537bec90ddd --
+Oct 24 08:20:07 ip-10-0-1-48 kernel: MDS CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html for more details.
+Oct 24 08:20:07 ip-10-0-1-48 kernel: MMIO Stale Data CPU bug present and SMT on, data leak possible. See https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/processor_mmio_stale_data.html for more details.
+Oct 24 08:20:07 ip-10-0-1-48 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Oct 24 08:20:07 ip-10-0-1-48 kernel: i8042: Warning: Keylock active
+Oct 24 08:20:08 ip-10-0-1-48 kernel: piix4_smbus 0000:00:01.3: SMBus base address uninitialized - upgrade BIOS or use force_addr=0xaddr
+Oct 24 08:20:08 ip-10-0-1-48 kernel: ena 0000:00:05.0: LLQ is not supported Fallback to host mode policy.
+Oct 24 08:20:09 ip-10-0-1-48 (udev-worker)[392]: ens5: Could not set WakeOnLan to off, ignoring: Operation not supported
+Oct 24 08:20:09 ip-10-0-1-48 kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Oct 24 08:20:10 ip-10-0-1-48 (acpid)[625]: acpid.service: Referenced but unset environment variable evaluates to an empty string: OPTIONS
+Oct 24 08:20:10 ip-10-0-1-48 (cron)[630]: cron.service: Referenced but unset environment variable evaluates to an empty string: EXTRA_OPTS
+Oct 24 08:20:11 ip-10-0-1-48 (irqbalance)[642]: irqbalance.service: Referenced but unset environment variable evaluates to an empty string: IRQBALANCE_ARGS
+Oct 24 08:20:11 ip-10-0-1-48 kernel: nvme nvme0: using unchecked data buffer
+Oct 24 08:20:22 ip-10-0-1-48 kernel: kauditd_printk_skb: 179 callbacks suppressed
+Oct 24 08:25:51 ip-10-0-1-48 irqbalance[642]: Cannot change IRQ 26 affinity: Permission denied
+Oct 24 08:25:51 ip-10-0-1-48 irqbalance[642]: IRQ 26 affinity is now unmanaged
+Oct 24 08:27:31 ip-10-0-1-48 sshd-session[1672]: error: kex_exchange_identification: read: Connection reset by peer
+Oct 24 08:29:31 ip-10-0-1-48 irqbalance[642]: Cannot change IRQ 25 affinity: Permission denied
+Oct 24 08:29:31 ip-10-0-1-48 irqbalance[642]: IRQ 25 affinity is now unmanaged
+Oct 24 09:21:52 ip-10-0-1-48 kernel: ena 0000:00:05.0: Type was not set for devlink port.
 
 ========================================
            END OF REPORT
